@@ -1,0 +1,98 @@
+body {
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+h1.header {
+    text-align: center;
+}
+
+div.grid-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+@media screen and (min-width: 1000px) {
+    div.card-grid {
+        grid-template-columns: repeat(4, 200px);
+    }
+}
+
+div.card-header {
+    border-bottom-width: 2px;
+    border-color: gray;
+    display: flex;
+    flex-direction: row;
+}
+
+div.card {
+    border-radius: 8px;
+    border-width: 2px;
+    box-shadow: 1px 1px 5px 5px gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+div.card-image-container {
+    height: 150px;
+    width: 150px;
+    border-radius: 4px;
+    padding: 8px;
+    display: inline-block;
+    justify-content: center;
+    border-width: 2px;
+    border-color: black;
+    text-align: center;
+}
+
+img.card-image {
+    width: 144px;
+    vertical-align: center;
+}
+
+div.card-footer {
+    padding: 8px;
+}
+
+.item-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.item-price {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.purchase-button {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    box-sizing: border-box;
+    background-color: blue;
+    padding: 15px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+}
